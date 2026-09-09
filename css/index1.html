@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Actividad 1 - CSS</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <h2>1)</h2>
+    <h1>CSS: ¿Que es?</h1>
+    <p>CSS es un lenguaje de hojas de estilo, el cual tiene como finalidad
+       editar, ajustar, y mejorar la apariencia de una pagina web, funcionando
+        junto a HTML. 
+    </p>
+    <hr>
+
+    <h2>2)</h2>
+    <p id="p1">Hola soy el parrafo 1 (id).</p>
+    <p class="parrafo">Hola soy el parrafo 2 (class).</p>
+    <p t>Hola soy el parrafo 3 (tag).</p>
+    <hr>
+
+    <h2>3)</h2>
+    <h3 id="titulo1">Soy un titulo.</h3> 
+    <p id="p2">Soy un parrafo con line-height amplio y letter spacing grande.</p>
+    <blockquote id="quote1">Soy una cita en cursiva.</blockquote>
+    <hr>
+
+    <h2>4)</h2>
+    <div class="tarjeta">
+        <h4>Tarjeta de Perfil</h4>
+        <p>Esta tarjeta muestra border, padding, margin, background-color, border-radius y box-shadow.</p>
+    </div>
+    <hr>
+
+    <h2>5)</h2>
+    <h3>Galería en Block (apiladas)</h3>
+    <div class="tarjeta display-block">
+      <h4>Tarjeta 1</h4>
+      <p>Comportamiento display: block.</p>
+    </div>
+    <div class="tarjeta display-block">
+      <h4>Tarjeta 2</h4>
+      <p>Comportamiento display: block.</p>
+    </div>
+    <div class="tarjeta display-block">
+      <h4>Tarjeta 3</h4>
+      <p>Comportamiento display: block.</p>
+    </div>
+
+    <h3>Galería en Inline (pierden dimensiones de caja)</h3>
+    <div class="tarjeta display-inline">
+      <h4>Tarjeta 1</h4>
+      <p>Comportamiento display: inline.</p>
+    </div>
+    <div class="tarjeta display-inline">
+      <h4>Tarjeta 2</h4>
+      <p>Comportamiento display: inline.</p>
+    </div>
+    <div class="tarjeta display-inline">
+      <h4>Tarjeta 3</h4>
+      <p>Comportamiento display: inline.</p>
+    </div>
+
+    <h3>Galería en Inline-Block (una al lado de la otra conservando caja)</h3>
+    <div class="tarjeta display-inline-block">
+      <h4>Tarjeta 1</h4>
+      <p>Comportamiento display: inline-block.</p>
+    </div>
+    <div class="tarjeta display-inline-block">
+      <h4>Tarjeta 2</h4>
+      <p>Comportamiento display: inline-block.</p>
+    </div>
+    <div class="tarjeta display-inline-block">
+      <h4>Tarjeta 3</h4>
+      <p>Comportamiento display: inline-block.</p>
+    </div>
+
+    <h3>Prueba de Visibilidad (Display none vs Visibility hidden)</h3>
+    <button class="btn-oculto-none">Botón Display None</button>
+    <button class="btn-oculto-hidden">Botón Visibility Hidden</button>
+    <button>Botón Normal Visible</button>
+
+    <p class="explicacion-visibilidad">
+      <strong>Diferencia:</strong> <code>display: none</code> quita por completo el elemento del flujo visual del documento, como si no existiera (no ocupa espacio en pantalla). Por el contrario, <code>visibility: hidden</code> oculta el contenido del elemento dejándolo invisible, pero continúa reservando y ocupando su ancho y alto correspondiente dentro del layout.
+    </p>
+
+
+</body>
+</html>

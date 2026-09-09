@@ -1,0 +1,77 @@
+p{
+    color:blue;
+    font-size: 15px;
+}
+
+#p1  {
+    color: brown;
+    font-size: 15px;
+    text-shadow: calc();
+}
+
+.parrafo{
+    color: blueviolet;
+    font-size: 20px;
+    text-box: calc();
+}
+
+#titulo1{
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px;
+    letter-spacing: 1.5px;
+}
+
+#p2{
+    line-height: 2.2;
+    letter-spacing: 3px;
+}
+
+#quote1{
+    font-stlye: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-left: 3px solid;
+
+}
+
+.tarjeta{
+    box-sizing: border-box;
+    width: 300px;
+    border:1px, solid;
+    padding: 10px;
+    margin: 20px;
+    background-color:crimson;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+
+.display-block {
+  display: block;
+}
+
+
+.display-inline {
+  display: inline;
+}
+
+
+.display-inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.btn-oculto-none {
+  display: none;       
+}
+
+.btn-oculto-hidden {
+  visibility: hidden;  
+}
+
+.explicacion-visibilidad {
+  background-color: #e2e8f0;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-top: 14px;
+}
