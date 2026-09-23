@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiTienda - TP Integrador CSS</title>
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+<body id="top">
+
+  <!-- ================= HEADER RESPONSIVO ================= -->
+  <header class="site-header">
+    <div class="container site-header__container">
+      <a href="#top" class="site-header__logo" aria-label="Inicio">
+        <span class="site-header__mark" aria-hidden="true">M</span>
+        <span class="site-header__name">MiTienda</span>
+      </a>
+
+      <!-- Botón hamburguesa (Mobile) -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Menú de navegación (Desktop / Tablet) -->
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li><a href="#novedades" class="site-nav__link">Novedades</a></li>
+          <li><a href="#ofertas" class="site-nav__link">Ofertas</a></li>
+          <li><a href="#contacto" class="site-nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= CONTENIDO PRINCIPAL ================= -->
+  <main class="container main-content">
+
+    <!-- BLOQUE 3: SISTEMA DE BOTONES -->
+    <section class="panel">
+      <h2 class="panel__title">1) Sistema de Botones</h2>
+      <p class="code-note">Base + variantes. Observa padding, radio, foco, hover/active. Usa Flex para el grupo.</p>
+      
+      <div class="btn-group">
+        <button class="btn btn--primary">Primario</button>
+        <button class="btn btn--secondary">Secundario</button>
+        <button class="btn btn--outline">Outline</button>
+        <button class="btn btn--danger">Peligro</button>
+        
+        <button class="btn btn--primary btn--icon">
+          <!-- Ícono de búsqueda SVG inline -->
+          <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Con icono</span>
+        </button>
+
+        <button class="btn btn--primary" disabled>Deshabilitado</button>
+      </div>
+    </section>
+
+    <!-- BLOQUE 4: TARJETA DE PRODUCTO -->
+    <section class="panel">
+      <h2 class="panel__title">2) Tarjeta de Producto</h2>
+      
+      <article class="product-card">
+        <!-- Media / Imagen con Badge -->
+        <div class="product-card__media">
+          <span class="product-card__badge">Nuevo</span>
+          <img 
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&auto=format&fit=crop&q=80" 
+            alt="Zapatillas Runner Pro color negro" 
+            class="product-card__image" 
+          />
+        </div>
+
+        <!-- Información -->
+        <div class="product-card__info">
+          <h3 class="product-card__title">Zapatillas Runner Pro</h3>
+          <p class="product-card__description">
+            Amortiguación ligera, malla respirable y suela antideslizante. Perfectas para entrenar todos los días.
+          </p>
+
+          <div class="product-card__pricing">
+            <span class="product-card__price">$ 24.999</span>
+            <span class="product-card__old-price">$ 29.999</span>
+          </div>
+
+          <!-- Acciones -->
+          <div class="product-card__actions">
+            <button class="btn btn--primary">Comprar ahora</button>
+            <button class="btn btn--outline btn--icon">
+              <!-- Ícono de añadir (+) SVG inline -->
+              <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+              <span>Añadir</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- BLOQUE 6: SECCIONES DE RELLENO -->
+    <section id="novedades" class="panel">
+      <h2 class="panel__title">Novedades</h2>
+      <p class="code-note">Sección de relleno para probar el menú.</p>
+    </section>
+
+    <section id="ofertas" class="panel">
+      <h2 class="panel__title">Ofertas</h2>
+      <p class="code-note">Otra sección de relleno.</p>
+    </section>
+
+    <section id="contacto" class="panel">
+      <h2 class="panel__title">Contacto</h2>
+      <p class="code-note">Más contenido de ejemplo.</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
